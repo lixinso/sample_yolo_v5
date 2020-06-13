@@ -22,8 +22,8 @@ RUN pip3 install numba
 
 RUN apt install -y unzip
 
-CMD /bin/bash -c "jupyter lab --ip 0.0.0.0 --port 8010 --allow-root &> /var/log/jupyter.log" & \
-        echo "allow 10 sec for JupyterLab to start @ http://localhost:8010 (password nvidia)" && \
+CMD /bin/bash -c "jupyter lab --ip 0.0.0.0 --port 7000 --allow-root &> /var/log/jupyter.log" & \
+        echo "allow 10 sec for JupyterLab to start @ http://localhost:7000 (password nvidia)" && \
         echo "JupterLab logging location:  /var/log/jupyter.log  (inside the container)" && \
         /bin/bash
 
