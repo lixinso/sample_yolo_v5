@@ -1,7 +1,8 @@
-FROM shenxn/pytorch-pi
+FROM ubuntu:20.04
 
 RUN apt install -y git
 RUN apt install -y python3-pip
 RUN apt install -y python3-opencv
 RUN apt install -y vim
+
 CMD ["/bin/bash"]
